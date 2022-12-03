@@ -14,23 +14,23 @@ app.use(express.static('public'));
 
 //GET Rout for hompage
 app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/notes.html'))
+    res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
-app.get('/api/notes', (req, res) =>{
-    fs.readFile("./db/db.json", "utf8", (error, data)=>{
+app.get('/api/notes', (req, res) => {
+    fs.readFile("./db/db.json", "utf8", (error, data) => {
         console.log(data);
         res.send(data);
     })
 }
 );
 
-app.post('/api/notes', (req, res) =>{
-    fs.readFile("./db/db.json", "utf8", (error, data)=>{
+app.post('/api/notes', (req, res) => {
+    fs.readFile("./db/db.json", "utf8", (error, data) => {
         console.log(data);
         let notes = JSON.parse(data)
         notes.push(req.body)
-        fs.writeFile("./db/db.json",JSON.stringify(notes), (error, data)=>{
+        fs.writeFile("./db/db.json", JSON.stringify(notes), (error, data) => {
             res.send(req.body)
         })
     })
@@ -39,9 +39,9 @@ app.post('/api/notes', (req, res) =>{
 
 //GET Route for feedback page
 app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/index.html'))
+    res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
 app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT} 🚀`)
+    console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
