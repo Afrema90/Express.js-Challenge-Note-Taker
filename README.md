@@ -3,7 +3,6 @@ I worked on this project with my tutor chris B, my study group David, and my pro
 
 Project demo
 https://drive.google.com/file/d/1hcfOwviwFIBsdlo19iAW4UTtpJpYbo3_/view
-
 User Story
 AS A small business owner
 I WANT to be able to write and save notes
@@ -33,15 +32,5 @@ Type node server.js to initiate the server.
 
 Note that there is no testing for this project!
 
-Table of Contents
-Description
-User Story
-Acceptance Criteria
-Installation & Usage
-Project Demo
-Heroku Deployed Link
-Final Thoughts
-Utilized Resources
-Contact
-Project Demonstration
- projectdemo.mp4 
+<img width="1470" alt="Screenshot 2022-12-05 at 11 05 36 PM" src="https://user-images.githubusercontent.com/112598840/205811888-c22a7203-1b53-426e-bb0d-200b0e034be8.png">
+<img width="1470" alt="Screenshot 2022-12-05 at 10 16 47 PM" src="https://user-images.githubusercontent.com/112598840/205811907-b03f4692-2593-4fe3-98af-a6b2a035afcf.png">
